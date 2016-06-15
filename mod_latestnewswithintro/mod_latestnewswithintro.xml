@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" method="upgrade">
+	<name>Latest News with Intro</name>
+	<creationDate>March 2014</creationDate>
+	<author>OpenSource Technologies</author>
+	<copyright>Copyright (C) 2009 - 2016 OpenSource Technologies. All rights reserved.</copyright> 
+	<license>GNU General Public License version 1 or later</license> 
+	<authorEmail>sales@opensourcetechnologies.com</authorEmail> 
+	<authorUrl>http://www.opensourcetechnologies.com</authorUrl>
+	<version>1.1.3</version>
+	<description>MODULE_DESCRIPTION</description>
+	<files>
+		<filename module="mod_latestnewswithintro">mod_latestnewswithintro.php</filename>
+		<filename>mod_latestnewswithintro.xml</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.mod_latestnewswithintro.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="Basic">
+				<field name="count" type="text" default="5" label="LABEL_COUNT" description="DESC_COUNT" />
+				<field name="ordering" type="list" default="create_dsc" label="LABEL_ORDERING" description="DESC_ORDERING">
+					<option value="c_dsc">Recently Added First</option>
+					<option value="m_dsc">Recently Modified First</option>
+				</field>
+				<field name="user_id" type="list" default="0" label="LABEL_AUTHOR" description="DESC_AUTHOR">
+					<option value="0">Anyone</option>
+					<option value="by_me">Added or modified by me</option>
+					<option value="not_me">Not added or modified by me</option>
+				</field>
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="show_front" type="radio" default="1" label="LABEL_FRONTPAGEITEMS" description="DESC_FRONTPAGEITEMS">
+					<option value="1">show</option>
+					<option value="0">hide</option>
+				</field>
+				<field name="catid" type="text" default="" label="LABEL_CATEGORYID" description="DESC_CATEGORYID" />
+				<field name="category" type="radio" default="0" label="LABEL_CATEGORYNAME" description="DESC_CATEGORY">
+					<option value="1">show</option>
+					<option value="0">hide</option>
+				</field>
+				<field name="intro_text" type="radio" default="0" label="LABEL_INTROTEXT" description="DESC_INTROTEXT">
+					<option value="1">show</option>
+					<option value="0">hide</option>
+				</field>
+				<field name="intro_text_img" type="radio" default="0" label="LABEL_INTROTEXT_IMAGE" description="DESC_INTROTEXT_IMAGE">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="intro_text_limit_type" type="radio" default="0" label="LABEL_INTROTEXT_LIMIT_TYPE" description="DESC_INTROTEXT_LIMIT_TYPE">
+					<option value="0">None</option>
+					<option value="1">Characters</option>
+					<option value="2">Words</option>
+				</field>				
+				<field name="intro_count" type="text" default="" label="LABEL_INTRO_TEXT_LIMIT" description="DESC_INTRO_TEXT_LIMIT" />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="moduleclass_sfx" type="text" default="" label="LABEL_MODULECLASSSUFFIX" description="DESC_MODULECLASSSUFFIX" />
+			</fieldset>
+			
+			<fieldset name="advanced">
+				<field name="cache" type="list" default="1" label="LABEL_CACHE" description="DESC_CACHE">
+					<option value="1">Use global</option>
+					<option value="0">No caching</option>
+				</field>
+				<field name="cache_time" type="text" default="900" label="LABEL_CACHE_TIME" description="DESC_CACHETIME" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>Combo Slider</name>
+	<creationDate>April 2014</creationDate>
+	<author>OpenSource Technologies</author>
+	<copyright>Copyright (C) 2014 - 2016 OpenSource Technologies. All rights reserved.</copyright> 
+	<license>GNU General Public License version 2 or later</license> 
+	<authorEmail>sales@opensourcetechnologies.com</authorEmail> 
+	<authorUrl>http://www.opensourcetechnologies.com</authorUrl>
+	<version>2.1.0</version>
+	 <description>This module is used for sliding banner.</description>
+	<files>
+	
+	<filename module="mod_comboslider">mod_comboslider.php</filename>
+	<filename>index.html</filename>
+	<folder>tmpl</folder>
+	<filename>tmpl/default.php</filename>
+	<filename>helper.php</filename>
+	<filename>tmpl/index.html</filename>
+	<filename>mod_comboslider.xml</filename>
+	<folder>css</folder>
+	<filename>css/index.html</filename>
+	<filename>css/jshowoff.css</filename>
+	<folder>js</folder>
+	<filename>js/index.html</filename>
+	<filename>js/jquery.1.4.min.js</filename>
+    </files>
+	
+	 <languages folder="language/en-GB">
+        <language tag="en-GB">en-GB.mod_comboslider.ini</language>
+		
+    </languages>
+	
+	<config>
+	<fields name="params">
+	 <fieldset name="advanced">
+			
+				<field name="width" type="text" default="615" label="SLIDER_WIDTH" size="5" />
+				<field name="height" type="text" default="330" label="SLIDER_HEIGHT" size="5" />
+				<field name="backg" type="text" default="e8f3fb" label="SLIDER_BACKGROUND" size="10" />
+				<field name="speed" type="text" default="6000" label="SLIDER_SPEED" size="5" />
+				<field name="slider_limit" type="text" default="10" label="SLIDER_LIMIT" size="5" />
+				<field name="slider_read" type="list" default="Yes" label="SLIDER_READ">
+					 <option value="YES">Yes</option>					
+					 <option value="NO">No</option>	
+					 </field>
+					  <field name="slider_strip" type="list" default="Yes" label="SLIDER_STRIP">
+					 <option value="YES">Yes</option>					
+					 <option value="NO">No</option>	
+					 </field>
+			<field name="slider_stripbackground_color" type="text" default="fff" label="SLIDER_BACKGROUND_COLOR" size="10" />
+			<field name="slider_striptext_color" type="text" default="0063AD" label="SLIDER_TEXT_COLOR" size="10" />
+			<field name="autoplay" type="list" default="Yes" label="SLIDER_AUTOPLAY">
+			<option value="YES">Yes</option>					
+			<option value="NO">No</option>	
+			</field>
+			<field name="next_pre" type="list" default="Yes" label="SLIDER_NEXTPRE">
+			<option value="YES">Yes</option>					
+			<option value="NO">No</option>	
+			</field>	 
+			
+			<field name="slider_articlebackground_color" type="text" default="FFF" label="SLIDER_ARTICLE_BACKGOROUND_COLOR" size="10" /> 
+			<field name="slider_article_color" type="text" default="CCC" label="SLIDER_ARTICLE_TEXT_COLOR" size="10" /> 
+			
+			<field name="slider_articletitle_limit" type="text" default="25" label="SLIDER_ARTICLE_TITLE_LIMIT" size="5" /> 	 
+				 
+				
+			</fieldset>
+		</fields>
+	</config>
+</extension>

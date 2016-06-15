@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" method="upgrade">
+    <name>Sobi2 Twitter</name>
+    <creationDate>March 2014</creationDate>
+	<author>OpenSource Technologies</author>
+	<copyright>Copyright (C) 2009 - 2016 OpenSource Technologies. All rights reserved.</copyright> 
+	<license>GNU General Public License version 2 or later</license> 
+	<authorEmail>sales@opensourcetechnologies.com</authorEmail> 
+	<authorUrl>http://www.opensourcetechnologies.com</authorUrl>
+    <version>1.5.2</version>
+    <description>A module that makes it easy to display your Twitter updates based on a Sobi2 Field.</description>
+    <files>
+        <filename module="mod_sobi2twitter">mod_sobi2twitter.php</filename>
+        <filename>mod_sobi2twitter.xml</filename>
+        <folder>api</folder>
+        <folder>css</folder>
+        <folder>images</folder>
+        <filename>index.html</filename>
+    </files>
+ 	<languages>
+		<language tag="en-GB">language/en-GB.mod_sobi2twitter.ini</language>
+    </languages>
+	<config>
+        <fields name="params">
+            <fieldset name="settings" label=" Modules Parameters">
+				<!--<field name="type" type="list" default="0" label="Display your tweets or query?" description="If set to displaying your tweets the module will output all of your recent tweets, otherwise if set to query it will display all recent tweets according to the query term.">
+					<option value="tweets">Your tweets</option>
+					<option value="multi">Multi-user tweets</option>
+				</field>-->
+				<field name="userName" type="text" default="" label="Twitter Username(s)" description="Your twitter username" />
+				<field name="oauthAccessToken" type="text" default="" label="Access token" description="Oauth Access token for your app at https://dev.twitter.com/apps/new" />
+				<field name="oauthAccessTokenSecret" type="text" default="" label="Access token secret" description="Oauth Access token secret for your app at https://dev.twitter.com/apps/new" />
+				<field name="consumerKey" type="text" default="" label="Consumer key" description="Consumer key for your app at https://dev.twitter.com/apps/new" />
+				<field name="consumerKeySecret" type="text" default="" label="Consumer secret" description="Consumer key SEcret for your app at https://dev.twitter.com/apps/new" />
+							
+				<field name="count" type="text" default="5" label="Tweet Count" description="Number of tweets to display" />
+				<field name="fieldname" type="text" default="" label="Sobi2 Field Name" description="Sobi2 Field Name for Twitter id" />
+            </fieldset>
+           
+            <fieldset name="displaySettings" label="Layout and Display Settings">
+				<field name="twitterBird" type="list" default="bird1" label="Twitter Icon" description="Select the twitter bird icon to display beside the first tweet in the twitter module. Please note that if this is set to anything other than none then you must set the avatar size to 0.">
+					<option value="bird1">Bird1</option>
+					<option value="bird2">Bird2</option>
+					<option value="bird3">Bird3</option>
+					<option value="bird4">Bird4</option>
+					<option value="bird5">Bird5</option>
+					<option value="none">No Icon</option>
+				</field>
+				<field name="avatar" type="list" default="no" label="Display Avatar?" description="Display the avatar before your tweets.">
+					<option value="yes">MOD_SOBI2TWITTER_YES</option>
+					<option value="no">MOD_SOBI2TWITTER_NO</option>
+				</field>
+				<field name="avatarSize" type="text" default="48" label="Avatar Size" description="The size of your twitter avatar" />
+				<field name="twitterName" type="list" default="yes" label="Display Twitter Name?" description="Display the twitter name for the tweet?">
+					<option value="yes">MOD_SOBI2TWITTER_YES</option>
+					<option value="no">MOD_SOBI2TWITTER_NO</option>
+				</field>
+				<!-- field name="twitterAction" type="text" default="tweeted" label="Twitter Name Action Text" description="Action text following the twitter name." /> -->
+				<field name="tweetSource" type="list" default="yes" label="Display Source?" description="Display the source of the tweet?">
+					<option value="yes">MOD_SOBI2TWITTER_YES</option>
+					<option value="no">MOD_SOBI2TWITTER_NO</option>
+				</field>
+				<!--  <field name="sourcePre" type="text" default="from" label="Tweet Source Preceeding Text" description="Text preceeding the Tweet source." /> -->
+				<field name="joinText" type="list" default="auto" label="Display linking text?" description="Display the intro text nominated below to preface your tweets.">
+					<option value="auto">MOD_SOBI2TWITTER_YES</option>
+					<option value="no">MOD_SOBI2TWITTER_NO</option>
+				</field>
+				<field name="noReplies" type="list" default="no" label="Display Replies?" description="Display direct replies to other users. Experimental feature that may result in reduced tweets being displayed.">
+					<option value="no">MOD_SOBI2TWITTER_YES</option>
+					<option value="yes">MOD_SOBI2TWITTER_NO</option>
+				</field>
+				<field name="tweetTemplate" type="list" default="1" label="Choose a Tweet Template" description="Pick the layout of your tweets as they areto be displayed.">
+					<option value="1">avatar + twitter name + join + text + date + tweet source</option>
+					<option value="2">avatar + twitter name + date + tweet source + join + text</option>
+					<option value="3">avatar + join + text + twitter name + date + tweet source</option>
+				</field>
+			
+            </fieldset>
+            
+            
+        </fields>
+    </config>
+  
+</extension>

@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Google Maps JavaScript API Example: Control Positioning</title>
+    <script src="http://maps.google.com/maps?file=api&amp;v=2"
+            type="text/javascript"></script>
+    <script type="text/javascript">
+
+    function initialize() {
+      if (GBrowserIsCompatible()) {
+        var map = new GMap2(document.getElementById("map_canvas"));
+	map.setCenter(new GLatLng(37.4419, -122.1419), 13); /*set centr map and zoom*/
+	/*set type map: G_HYBRID_MAP, G_NORMAL_MAP, G_SATELLITE_MAP*/
+	map.setMapType(G_HYBRID_MAP);
+	var mapTypeControl = new GMapTypeControl();
+
+        /* old var mapTypeControl = new GMapTypeControl(); GMapTypeControl() -- Создает контроль с кнопками, чтобы переключить между типами карты.--правый верхний угол*/
+	
+	/*задание координат где выаодить кнопку с типами карт*/
+        var topRight = new GControlPosition(G_ANCHOR_TOP_RIGHT, new GSize(5,5));
+	
+	map.addControl(mapTypeControl, topRight); /* topRight вывод самих кнопок*/
+
+	/*GSmallMapControl() -- Создает контроль с кнопками, +- право/лево в  угол*/
+	map.addControl(new GSmallMapControl());
+
+      }
+    }
+    </script>
+ </head>
+
+ <body onload="initialize()" onunload="GUnload()">
+    <div id="map_canvas" style="width: 200px; height: 200px"></div>
+ </body>
+</html>
+

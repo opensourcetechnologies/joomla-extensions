@@ -1,0 +1,2 @@
+DROP TABLE IF EXISTS `#__comboSlider`;
+DROP TABLE IF EXISTS `#__comboSlider_article`;

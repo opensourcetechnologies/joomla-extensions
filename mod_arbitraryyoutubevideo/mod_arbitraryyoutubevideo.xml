@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.x" client="site" method="upgrade">
+	<name>Arbitrary Youtube Videos</name> 
+	 <creationDate>January 2013</creationDate>
+	<author>OpenSource Technologies</author>
+	<copyright>Copyright (C) 2009 - 2016 OpenSource Technologies. All rights reserved.</copyright> 
+	<license>GNU General Public License version 2 or later</license> 
+	<authorEmail>sales@opensourcetechnologies.com</authorEmail> 
+    <authorUrl>http://www.opensourcetechnologies.com</authorUrl>
+	<version>3.1.0</version> 
+	<description>MOD_ARBITRARYYOUTUBEVIDEO_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_arbitraryyoutubevideo">mod_arbitraryyoutubevideo.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_arbitraryyoutubevideo.ini</language>
+		<language tag="en-GB">en-GB.mod_arbitraryyoutubevideo.sys.ini</language>
+	</languages>
+ 
+ 
+    <!-- Optional parameters -->
+	<config>
+            <fields name="params">
+                <fieldset name="basic">
+                    <field 
+                        name="multyurls" 
+                        type="textarea"
+                        rows="13" cols="24"
+                        label="MOD_ARBITRARYYOUTUBEVIDEO_MYURLS" 
+                        description="Please enter the YouTube Video URL comma seprated.">
+                    </field>
+				 <field 
+                        name="height" 
+                        type="text"
+						default="300"
+                        label="MOD_ARBITRARYYOUTUBEVIDEO_HEIGHT"  
+                        description="Put YouTube Video Height.">
+                    </field>
+					 <field 
+                        name="width" 
+                        type="text"
+						default="300"
+                        label="MOD_ARBITRARYYOUTUBEVIDEO_WIDTH" 
+                        description="Put YouTube Video width.">
+                    </field>
+                      
+              
+                <field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="moduleclass_sfx" type="text" default="" label="MOD_ARBITRARYYOUTUBEVIDEO_CLASSSUFIX" description="PARAMMODULECLASSSUFFIX" />
+              </fieldset>
+            </fields>
+    </config>
+</extension>

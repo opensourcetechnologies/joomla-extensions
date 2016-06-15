@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="install">
+	
+<name>Jfusion Phpbb Featured Garage</name>
+<author>OpenSource Technologies</author> 
+<creationDate>November 2015</creationDate> 
+<copyright>Copyright (C) 2009 - 2016 OpenSource Technologies. All rights reserved.</copyright> 
+<license>GNU General Public License version 2 or later</license> 
+<authorEmail>sales@opensourcetechnologies.com</authorEmail> 
+<authorUrl>http://www.opensourcetechnologies.com</authorUrl> 
+<version>3.1.0</version> 
+<description>This Module is based on Jfusion Component. It displays content of garage extension of phpbb in joomla site. To get Garage Extension, visit http://www.opensourcetechnologies.com/product/phpbb-garage </description>
+
+	<files>
+		<filename module="mod_jfusion_phpbb_featured_garage">mod_jfusion_phpbb_featured_garage.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_jfusion_phpbb_featured_garage.xml</filename>
+		<folder>tmpl</folder>
+		<folder>assets</folder>
+	</files>
+	 <languages>
+		<language tag="en-GB">en-GB.mod_jfusion_phpbb_featured_garage.ini</language>
+	</languages>
+	<config>
+		<fields name="params" addfieldpath="/administrator/components/com_jfusion/fields/">
+			<fieldset name="basic">
+				
+				<field name="JFusionPlugin" type="JFusionAdvancedParam" default="" feature="useractivity" label="JFusion Plugin*" description="Which JFusion plugin should be used for the avatar, PM info, and links?" />
+				
+				<field name="itemid" type="JFusionItemid" size="5" default="" label="Menu Item*" description="Select the menu item of the JFusion plugin if you have one (urls are shorter this way and it is needed for full frameless integration)" />
+				<field name="forum_dir" type="text" size="5" default="forum" label="Forum Directory Name*" description="Forum Directory Name"  />
+				<field
+					name="title"
+					type="text"
+					label="Title"
+					description="Title"
+					default="Featured Garage" />
+				<field
+					name="count"
+					type="text"
+					label="Title Link"
+					description="Title Link"
+					default="index.php?mode=main_g_settings" />
+				
+				
+			</fieldset>
+		</fields>
+	</config>
+</extension>

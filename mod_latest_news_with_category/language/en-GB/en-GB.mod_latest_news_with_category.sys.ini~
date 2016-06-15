@@ -1,0 +1,3 @@
+MOD_LATEST_NEWS_WITH_CATEGORYS="Latest News With Category Name Display"
+MOD_LATEST_NEWS_WITH_CATEGORY_XML_DESCRIPTION="This Module shows a list of the most recently published and current Articles. Some that are shown may have expired even though they are the most recent.You can also enable or disable the introduction text,number of character to show in introducton text and level of categories to show."
+MOD_LATEST_NEWS_WITH_CATEGORY_LAYOUT_DEFAULT="Default"

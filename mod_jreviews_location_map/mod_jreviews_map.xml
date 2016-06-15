@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension	type="module"	version="3.0"	method="upgrade">
+  <name>Jreviews Location Map</name>
+  <author>OpenSource Technologies</author> 
+  <creationDate>March 2014</creationDate>
+  <copyright>Copyright (C) 2009 - 2016 OpenSource Technologies. All rights reserved.</copyright>
+  <authorEmail>sales@opensourcetechnologies.com</authorEmail>  <authorUrl>http://www.opensourcetechnologies.com</authorUrl>
+  <license>GNU General Public License version 2 or later</license>  <version>1.1.0</version>  <description>A module that makes it easy to display Location Map based on a JReviews Fields</description>
+  <files>     <filename module="mod_jreviews_map">mod_jreviews_map.php</filename>
+     <filename module="mod_jreviews_map">razn_google_map.php</filename>
+     <filename>razn_google_map.html</filename> 
+  </files>       
+	<config>		<fields name="params">			<fieldset name="basic">              <field name="google_map_key" type="text" default="" label="Google Maps key" description="Google Maps key. Obtain a key for your website from http://www.google.com/apis/maps/signup.html" />	 <field name="latitude_field" type="text" default="jr_positionlatitude" label="JReviews Field Name for Latitude" description="Put the JReviews Field Name for Latitude" />     <field name="longitude_field" type="text" default="jr_positionlingitude" label="JReviews Field Name for Longitude" description="Put the JReviews Field Name for Longitude" />     <field name="latitude" type="text" default="50" label="Map Center - latitude" description="Center of your location map - latitude" />     <field name="longitude" type="text" default="36.26" label="Map Center - longitude" description="Center of your location map - longitude" />	 <field name="zoom" type="text" default="9" label="Zoom Level" description="Zoom Level for your location map" />     <field name="map_width" type="text" default="100" label="Width of map (%)" description="The width of your location map (in %)" />     <field name="map_height" type="text" default="250" label="Height of map (px)" description="The  height of your location map (in px)" />     <field name="messag" type="textarea" cols="20" rows="5" default="Orda Soft" label="Text Message for Marker" description="Text Message for the Marker on your location map (HTML code is supported)" />     <field name="menu_map" type="radio" default="0" label="Map Type Menu" description="Show Map Type Menu (Map-Satellite-Hybrid)">			<option value="0">Hide</option>
+			<option value="1">Show</option>
+	</field>
+	<field name="control_map" type="radio" default="0" label="Map Controls Menu" description="Show Map Controls (Up-Down-Left-Right)">			<option value="0">Hide</option>
+			<option value="1">Show</option>
+	</field>			</fieldset>		</fields>	</config></extension>

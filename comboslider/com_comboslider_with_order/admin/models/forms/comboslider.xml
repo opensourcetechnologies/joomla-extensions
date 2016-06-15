@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form addrulepath="/administrator/components/com_comboslider/models/rules">
+	<fieldset>
+		<field name="id" type="hidden" />
+		
+
+
+       <field name="type" type="list" size="1" class="inputbox" default="1" label="COM_MONDI_MONDI_PRODUCT_TYPE_LABEL" description="COM_MONDI_MONDI_PRODUCT_TYPE_DESC" required="true" >
+			   <option value="" >Select</option>
+				<option value="article" >Article</option>
+				<option value="static" >Static</option>
+				<option value="category" >Category</option>
+
+		</field>	
+	
+		     <field name="article" type="category" size="1" class="inputbox" default="1" label="COM_MONDI_MONDI_PRODUCT_TYPE_LABEL" description="COM_MONDI_MONDI_PRODUCT_TYPE_DESC" required="true" extension="com_comboslider" >
+			 <option value="0">JOPTION_SELECT_CATEGORY</option>
+			  
+
+		</field>	
+				
+
+
+    
+			  
+			  
+			  
+
+				
+				
+
+    
+
+    
+		
+		
+		
+	</fieldset>
+</form>

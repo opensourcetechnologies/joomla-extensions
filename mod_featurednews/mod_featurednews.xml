@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>Featured New</name>
+	<creationDate>March 2014</creationDate>
+	<author>OpenSource Technologies</author>
+	<copyright>Copyright (C) 2009 - 2016 OpenSource Technologies. All rights reserved.</copyright> 
+	<license>GNU General Public License version 2 or later</license> 
+	<authorEmail>sales@opensourcetechnologies.com</authorEmail> 
+	<authorUrl>http://www.opensourcetechnologies.com</authorUrl>
+	<version>3.1.0</version>
+	<description>MODULE_DESCRIPTION</description>
+	<files>
+		<filename module="mod_featuredNews">mod_featurednews.php</filename>
+		<filename>mod_featurednews.xml</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.mod_featurednews.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="Basic" addfieldpath="/administrator/components/com_content/models/fields">
+				<field name="count" type="text" default="5" label="LABEL_COUNT" description="DESC_COUNT" />
+				<field name="moduleclass_sfx" type="text" default="" label="LABEL_MODULECLASSSUFFIX" description="DESC_MODULECLASSSUFFIX" />
+				
+				<field name="article_1" type="modal_article" default="0" label="LABEL_ARTICLE" description="DESC_ARTICLE" />
+				<field name="article_2" type="modal_article" default="0" label="LABEL_ARTICLE" description="DESC_ARTICLE" />
+				<field name="article_3" type="modal_article" default="0" label="LABEL_ARTICLE" description="DESC_ARTICLE" />
+				<field name="article_4" type="modal_article" default="0" label="LABEL_ARTICLE" description="DESC_ARTICLE" />
+				<field name="article_5" type="modal_article" default="0" label="LABEL_ARTICLE" description="DESC_ARTICLE" />
+				<field name="article_6" type="modal_article" default="0" label="LABEL_ARTICLE" description="DESC_ARTICLE" />
+				<field name="article_7" type="modal_article" default="0" label="LABEL_ARTICLE" description="DESC_ARTICLE" />
+				<field name="article_8" type="modal_article" default="0" label="LABEL_ARTICLE" description="DESC_ARTICLE" />
+				<field name="article_9" type="modal_article" default="0" label="LABEL_ARTICLE" description="DESC_ARTICLE" />
+				<field name="article_10" type="modal_article" default="0" label="LABEL_ARTICLE" description="DESC_ARTICLE" />
+				<field name="article_11" type="modal_article" default="0" label="LABEL_ARTICLE" description="DESC_ARTICLE" />
+				<field name="article_12" type="modal_article" default="0" label="LABEL_ARTICLE" description="DESC_ARTICLE" />
+				<field name="article_13" type="modal_article" default="0" label="LABEL_ARTICLE" description="DESC_ARTICLE" />
+				<field name="article_14" type="modal_article" default="0" label="LABEL_ARTICLE" description="DESC_ARTICLE" />
+				<field name="article_15" type="modal_article" default="0" label="LABEL_ARTICLE" description="DESC_ARTICLE" />
+				<field name="article_16" type="modal_article" default="0" label="LABEL_ARTICLE" description="DESC_ARTICLE" />
+				<field name="article_17" type="modal_article" default="0" label="LABEL_ARTICLE" description="DESC_ARTICLE" />
+				<field name="article_18" type="modal_article" default="0" label="LABEL_ARTICLE" description="DESC_ARTICLE" />
+				<field name="article_19" type="modal_article" default="0" label="LABEL_ARTICLE" description="DESC_ARTICLE" />
+				<field name="article_20" type="modal_article" default="0" label="LABEL_ARTICLE" description="DESC_ARTICLE" />
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="cache" type="list" default="1" label="LABEL_CACHE" description="DESC_CACHE">
+					<option value="1">Use global</option>
+					<option value="0">No caching</option>
+				</field>
+				<field name="cache_time" type="text" default="900" label="LABEL_CACHE_TIME" description="DESC_CACHETIME" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
