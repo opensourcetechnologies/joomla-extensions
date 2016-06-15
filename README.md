@@ -1,3 +1,3 @@
 # Joomla Extensions
 
-	Joomla Free Extensions, develop by OpenSource Technologies 
+	Joomla Free Extensions, developed by OpenSource Technologies 
